@@ -1,0 +1,58 @@
+.switch {
+    position: absolute;
+    top: 28px;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: -10px;
+  }
+  
+  #themeCb {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    
+    background-image: url("https://freepngimg.com/save/117856-crescent-moon-free-hq-image/582x639");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input[type="checkbox"]:checked + .slider {
+
+    background-color: rgb(255, 255, 255);
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(26px);
+    background-image: url("https://www.svgrepo.com/download/78390/sun.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
