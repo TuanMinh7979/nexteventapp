@@ -162,7 +162,7 @@ const StackedBarChartWithWeekGroups = ({
         },
       ],
     });
-  }, [curWeek, dayOfWArr]);
+  }, [curWeek]);
 
   return (
     <>
